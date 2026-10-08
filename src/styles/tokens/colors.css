@@ -1,0 +1,52 @@
+:root{
+/* Pompeian red — primary */
+--pompeii-50:#FBEEEA;--pompeii-100:#F4D3CA;--pompeii-200:#E6A898;--pompeii-300:#D37A64;--pompeii-400:#BF5640;--pompeii-500:#A63A28;--pompeii-600:#8C2E20;--pompeii-700:#6E2419;--pompeii-800:#511B13;
+/* Terracotta */
+--terracotta-100:#F6DCCB;--terracotta-300:#E2A07A;--terracotta-500:#C8714A;--terracotta-700:#8F4B2D;
+/* Ochre / Siena yellow */
+--ochre-100:#F7E7C2;--ochre-300:#E8C26E;--ochre-500:#C99A2E;--ochre-700:#86641A;
+/* Umbrian olive */
+--olive-100:#E4E6D0;--olive-300:#AEB27E;--olive-500:#6B7340;--olive-700:#454B27;
+/* Adriatic blue (water, info) */
+--adriatic-100:#DCE7EC;--adriatic-500:#3F6E86;--adriatic-700:#284A5C;
+/* Espresso — warm neutrals, dark */
+--espresso-900:#211510;--espresso-800:#2E1E16;--espresso-700:#43301F;--espresso-600:#5C4433;--espresso-500:#7A604C;--espresso-400:#9C8470;
+/* Travertine — warm neutrals, light */
+--travertine-300:#D9CBB4;--travertine-200:#E8DDCA;--travertine-100:#F2EADB;--travertine-50:#F8F3EA;--marble:#FDFAF4;
+
+/* Semantic */
+--bg-app:var(--travertine-50);
+--surface-card:var(--marble);
+--surface-sunken:var(--travertine-100);
+--surface-raised:#FFFFFF;
+--surface-inverse:var(--espresso-800);
+--surface-scrim:rgba(33,21,16,.48);
+
+--text-strong:var(--espresso-900);
+--text-body:var(--espresso-700);
+--text-muted:var(--espresso-500);
+--text-on-accent:var(--marble);
+--text-inverse:var(--travertine-100);
+--text-link:var(--pompeii-600);
+
+--border-subtle:var(--travertine-200);
+--border-default:var(--travertine-300);
+--border-strong:var(--espresso-400);
+--border-focus:var(--pompeii-500);
+
+--accent:var(--pompeii-500);
+--accent-hover:var(--pompeii-600);
+--accent-press:var(--pompeii-700);
+--accent-soft:var(--pompeii-50);
+--accent-secondary:var(--terracotta-500);
+
+--status-open:var(--olive-500);--status-open-soft:var(--olive-100);
+--status-closing:var(--ochre-700);--status-closing-soft:var(--ochre-100);
+--status-closed:var(--pompeii-600);--status-closed-soft:var(--pompeii-50);
+--status-info:var(--adriatic-500);--status-info-soft:var(--adriatic-100);
+
+--map-pin:var(--pompeii-500);
+--map-pin-active:var(--espresso-800);
+--map-user:var(--adriatic-500);
+--rating-star:var(--ochre-500);
+}

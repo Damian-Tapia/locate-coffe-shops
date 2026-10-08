@@ -1,0 +1,6 @@
+html,body{margin:0;background:var(--bg-app);color:var(--text-body);font:var(--type-body);-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:var(--text-link);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--pompeii-700)}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;color:var(--text-strong);letter-spacing:var(--tracking-display);margin:0}
+::selection{background:var(--ochre-100)}
