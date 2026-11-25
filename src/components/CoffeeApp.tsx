@@ -495,6 +495,9 @@ export class CoffeeApp extends Component<Record<string, never>, AppState> {
       },
       (error) => {
         // No sustituir una ubicación real fallida por Roma: informar y permitir reintentar.
+        // Persist the failure state: otherwise "app" remains in storage and a reload
+        // immediately retries geolocation, creating a refresh/retry loop in Safari.
+        localStorage.setItem("bc-stage", "permission");
         this.setState({ loading: false, stage: "permission" });
         const message =
           error.code === 1
