@@ -70,13 +70,13 @@ export function Button({
       type={type}
       disabled={disabled}
       onClick={onClick}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => {
+      onPointerEnter={(e) => { if (e.pointerType === "mouse") setHover(true); }}
+      onPointerLeave={() => {
         setHover(false);
         setPress(false);
       }}
-      onMouseDown={() => setPress(true)}
-      onMouseUp={() => setPress(false)}
+      onPointerDown={() => setPress(true)}
+      onPointerUp={() => setPress(false)}
       style={{
         display: "inline-flex",
         alignItems: "center",
@@ -96,6 +96,8 @@ export function Button({
         transform: press && !disabled ? "scale(0.98)" : "none",
         transition: "background var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out)",
         whiteSpace: "nowrap",
+        touchAction: "manipulation",
+        WebkitTapHighlightColor: "transparent",
         ...style,
       }}
     >
