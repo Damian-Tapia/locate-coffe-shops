@@ -493,11 +493,20 @@ export class CoffeeApp extends Component<Record<string, never>, AppState> {
           this.flash("Sin conexión · intenta de nuevo", "wifi-off");
         }
       },
-      () => {
-        done(DEMO_USER, DEMO_SHOPS, "demo");
-        this.flash("Sin ubicación · ejemplo en Roma", "map-pin");
+      (error) => {
+        // No sustituir una ubicación real fallida por Roma: informar y permitir reintentar.
+        this.setState({ loading: false, stage: "permission" });
+        const message =
+          error.code === 1
+            ? "Permiso denegado · habilita ubicación en Safari"
+            : error.code === 2
+              ? "Ubicación no disponible · revisa GPS y conexión"
+              : error.code === 3
+                ? "Tiempo agotado · intenta de nuevo"
+                : "No pudimos obtener tu ubicación";
+        this.flash(message, "map-pin");
       },
-      { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 },
+      { enableHighAccuracy: false, timeout: 20000, maximumAge: 30000 },
     );
   }
 
