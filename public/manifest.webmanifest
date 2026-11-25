@@ -1,3 +1,2 @@
 {
-"name":"Cafés para Barbie","short_name":"Cafés","description":"Encuentra cafés cerca de ti y guarda tus favoritos.","lang":"es-MX","start_url":"/","scope":"/","display":"standalone","orientation":"portrait","background_color":"#F5E9D5","theme_color":"#B75D46","icons":[{"src":"/icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
-}
+  "name": "Cafés para Barbie", "short_name": "Cafés", "description": "Encuentra cafés cerca de ti y guarda tus favoritos.", "lang": "es-MX", "start_url": "/", "scope": "/", "display": "standalone", "orientation": "portrait", "background_color": "#F5E9D5", "theme_color": "#B75D46", "icons": [ { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }, { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" } ] }
